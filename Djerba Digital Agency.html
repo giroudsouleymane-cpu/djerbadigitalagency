@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djerba Digital Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0d0d0d;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(13,13,13,0.95);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    z-index:1000;
+    border-bottom:1px solid #222;
+}
+
+nav a{
+    color:#ddd;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#a78bfa;
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-container img{
+    height:40px;
+    display:block;
+}
+
+.logo-text{
+    font-weight:700;
+    font-size:18px;
+    color:white;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#0d0d0d,#1e1e1e);
+}
+
+header h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+header p{
+    font-size:20px;
+    color:#cbd5e1;
+    margin-bottom:40px;
+}
+
+.btn{
+    padding:16px 40px;
+    background:#8b5cf6;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+    box-shadow:0 0 20px rgba(139,92,246,0.5);
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#ec4899;
+    box-shadow:0 0 30px rgba(236,72,153,0.6);
+}
+
+section{
+    padding:120px 20px;
+    text-align:center;
+}
+
+h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.services,.portfolio{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+    margin-top:60px;
+}
+
+.card{
+    background:#1e293b;
+    padding:40px;
+    width:300px;
+    border-radius:20px;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform:translateY(-15px);
+    background:#334155;
+    box-shadow:0 0 40px rgba(139,92,246,0.5);
+}
+
+footer{
+    background:#020617;
+    padding:40px;
+    color:#94a3b8;
+    text-align:center;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:32px;
+    }
+    h2{
+        font-size:28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo-container">
+
+      <div class="logo-text">Djerba Digital Agency</div>
+  </div>
+  <div>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header data-aos="fade-up">
+<h1>Création de Sites Web à Djerba</h1>
+<p>Design moderne. Performance rapide. Plus de clients.</p>
+<a href="https://wa.me/21690449442" class="btn">Demander un devis</a>
+</header>
+
+<section id="services">
+<h2 data-aos="fade-up">Nos Services</h2>
+<div class="services">
+<div class="card" data-aos="zoom-in">
+<h3>Site Vitrine</h3>
+<p>Site professionnel pour présenter votre entreprise.</p>
+</div>
+
+<div class="card" data-aos="zoom-in" data-aos-delay="200">
+<h3>Optimisation Mobile</h3>
+<p>100% responsive et rapide sur smartphone.</p>
+</div>
+
+<div class="card" data-aos="zoom-in" data-aos-delay="400">
+<h3>Maintenance</h3>
+<p>Mise à jour, sécurité et support continu.</p>
+</div>
+</div>
+</section>
+
+<section id="portfolio">
+<h2 data-aos="fade-up">Nos Projets</h2>
+<div class="portfolio">
+<div class="card" data-aos="flip-left">
+<h3>Restaurant Premium</h3>
+<p>Site moderne pour restaurant local.</p>
+</div>
+
+<div class="card" data-aos="flip-left" data-aos-delay="200">
+<h3>Location Quad</h3>
+<p>Site vitrine pour loueur touristique.</p>
+</div>
+
+<div class="card" data-aos="flip-left" data-aos-delay="400">
+<h3>Villa Airbnb</h3>
+<p>Présentation élégante pour location saisonnière.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 data-aos="fade-up">Contact</h2>
+<p data-aos="fade-up" data-aos-delay="200">📍 Basé à Djerba</p>
+<p data-aos="fade-up" data-aos-delay="300">📲 WhatsApp : +216 XXXXXXXX</p>
+<br>
+<a href="https://wa.me/216XXXXXXXX" class="btn" data-aos="zoom-in">Discuter sur WhatsApp</a>
+</section>
+
+<footer>
+© 2026 Djerba Digital Agency - Tous droits réservés
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+duration:1000,
+once:true
+});
+</script>
+
+</body>
+</html>
